@@ -68,8 +68,8 @@ GPLv3
 Patches welcome.
 
 ## Contact ##
-e-mail: http://is.gd/60ggk7
-identi.ca: http://identi.ca/yamatt
-twitter: http://twitter.com/mattcopp
-website: http://localhosy.net
+* e-mail: http://is.gd/60ggk7
+* identi.ca: http://identi.ca/yamatt
+* twitter: http://twitter.com/mattcopp
+* website: http://localhosy.net
 
