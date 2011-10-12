@@ -30,12 +30,14 @@ You can either set up the directory to syncronise yourself. You can then follow 
     ./bagmify path_to_directory git_repository
 
 example:
+
     ./bagmify ./filestore git@github.com:username/filestore.git
     
 #### Normal Run ####
     ./bagmify path_to_directory
     
 example:
+
     ./bagmify ./filestore
 
 ## License ##
