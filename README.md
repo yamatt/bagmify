@@ -1,5 +1,5 @@
-= Bagmi =
-== About ==
+# Bagmi #
+## About ##
 Bagmi is a script that wraps inotify and git to create a Dropbox like tool.
 It started after a conversation on identi.ca http://identi.ca/notice/84548083 where a complaint was raised that it's a shame SparkleShare was written in Mono when all it needs to do is wrap inotify and git.
 Therefore I built it.
@@ -8,13 +8,13 @@ Originally I coded it in Python then realised it would be far simpler to write i
 
 The script simply monitors a directory of your choosing and when a file is changed it will commit and push it to the git repository of your choosing.
 
-== Requirements ==
+## Requirements ##
 You require Git and inotifywait.
-=== Debian ===
+### Debian ###
     apt-get install git-core inotify-tools
 
-== Usage ==
-=== Setup ===
+## Usage ##
+### Setup ###
 You will require somewhere to store your git and have certificate access. May I recommend github.com.
 It will run you through the process of setting everything up on a linux machine.
 Of course github repositories are public and you have to pay to get private repository.
@@ -23,22 +23,22 @@ If you wish to run your own git repository you won't have your files in public. 
 
 You then need to run the bagmify script in a screen session (for the moment).
 
-=== Running ===
+### Running ###
 You can either set up the directory to syncronise yourself. You can then follow the post-first-run instructions to execute it.
 
-==== First Run ====
+#### First Run ####
     ./bagmify path_to_directory git_repository
 
 example:
     ./bagmify ./filestore git@github.com:username/filestore.git
     
-==== Normal Run ====
+#### Normal Run ####
     ./bagmify path_to_directory
     
 example:
     ./bagmify ./filestore
 
-== License ==
+## License ##
 GPLv3
 
     Bagmify - inotify + git wrapper
@@ -57,7 +57,7 @@ GPLv3
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-== Future Additions ==
+## Future Additions ##
 * More descriptive commit messages
 * Works with init.d
 * More guidance in this document
@@ -65,7 +65,7 @@ GPLv3
 
 Patches welcome.
 
-== Contact ==
+## Contact ##
 e-mail: http://is.gd/60ggk7
 identi.ca: http://identi.ca/yamatt
 twitter: http://twitter.com/mattcopp
