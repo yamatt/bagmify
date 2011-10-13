@@ -39,6 +39,10 @@ example:
 example:
 
     ./bagmify ./filestore
+    
+### Switching from SparkleShare ###
+I'm told SparkleShare uses git. If you want to switch to bagmify use the remote path SparkleShare uses to commit in the first run.
+Better instructions welcome.
 
 ## License ##
 GPLv3
