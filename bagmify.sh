@@ -2,7 +2,7 @@
 
 #####################################################################
 # Bagmify - inotify + git wrapper
-# Copyright (C) 2011  Matthew Copperwaite
+# Copyright (C) 2011  Matthew Copperwaite, Dom Rodriguez (shymega)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

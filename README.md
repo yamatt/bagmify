@@ -76,7 +76,7 @@ the Git remote URI SparkleShare uses to commit in the first run.
 This project is licensed under the GPL, version 3.
 
     Bagmify - inotify + git wrapper
-    Copyright (C) 2011  Matthew Copperwaite
+    Copyright (C) 2011  Matthew Copperwaite, Dom Rodriguez (shymega)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
