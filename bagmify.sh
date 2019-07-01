@@ -18,36 +18,36 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #######################################################################
 
-WATCH_DIR=$1
-GIT_PATH=$2
+WATCH_DIR="$1"
+GIT_PATH="$2"
 REMOTE_REPO_NAME="bagmify"
 
 update()
 {
     # commit everything
     git add --all
-    git commit -m "`date` automatic commit."
-    git push $REMOTE_REPO_NAME
+    git commit -m "$(date) automatic commit."
+    git push "$REMOTE_REPO_NAME"
 }
 
-if [ -d $GIT_PATH ]; then
-    cd $WATCH_DIR
+if [ -d "$GIT_PATH" ]; then
+    cd "$WATCH_DIR" || exit 1
     # has git init ran
     if [ ! -d .git/ ]; then
         echo "No git found before"
         git init
-        if [ `ls -1 | wc -l` -eq 0 ]; then
+        if [ "$(find . | wc -l)" -eq 0 ]; then
             echo "Creating something to commit"
             touch empty
         fi
     fi
     # does remote repo exist
-    if [ "`git remote | grep bagmify`" = $REMOTE_REPO_NAME ]; then
-        git remote add $REMOTE_REPO_NAME $GIT_PATH
+    if [ "$(git remote | grep bagmify)" = "$REMOTE_REPO_NAME" ]; then
+        git remote add "$REMOTE_REPO_NAME" "$GIT_PATH"
     fi
 fi
 
-echo "Using directory `pwd`"
+echo "Using directory $(pwd)"
 # watch dir for create, modify, move and delete
 while inotifywait -r -qq -e create -e close_write -e move -e delete .; do
     echo "Commiting"
