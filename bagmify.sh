@@ -18,12 +18,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #######################################################################
 
+set -eu
+
 WATCH_DIR="$1"
 GIT_PATH="$2"
 REMOTE_REPO_NAME="bagmify"
 
-update()
-{
+update() {
     # commit everything
     git add --all
     git commit -m "$(date) automatic commit."
