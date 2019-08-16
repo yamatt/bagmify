@@ -24,7 +24,8 @@ WATCH_DIR="$1"
 GIT_PATH="$2"
 REMOTE_REPO_NAME="bagmify"
 
-update() {
+update()
+{
     # commit everything
     git add --all
     git commit -m "$(date) automatic commit."
